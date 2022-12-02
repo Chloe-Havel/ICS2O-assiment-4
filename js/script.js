@@ -10,8 +10,8 @@
  * Check servie worker.
  */
 if (navigator.serviceWorker) {
-  navigator.serviceWorker.register("/ICS2O-PWA-Test-1/sw.js", {
-    scope: "/ICS2O-PWA-Test-1/",
+  navigator.serviceWorker.register("/ICS2O-unit-5-04/sw.js", {
+    scope: "/ICS2O-unit-5-04/",
   })
 }
 
@@ -19,5 +19,17 @@ if (navigator.serviceWorker) {
  * This function displays an alert.
  */
 function myButtonClicked() {
-  document.getElementById("hello-world").innerHTML = "<p>Hello, World!</p>"
+  let cost = 0
+  
+  var flavor = document.getElementById("flavor").value
+  var toping = document.getElementById("toping").value
+
+  if (flavor == "ChocolateCreamPie") {
+    cost = cost + 7.89
+  } else if {
+    document.getElementById("answer").innerHTML =
+      "You must pay regular priseing"
+  }
+
+  // output cost
 }
